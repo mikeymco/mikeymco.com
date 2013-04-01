@@ -1,0 +1,169 @@
+@import '_fonts';
+@import '_normalize';
+@import "compass/css3/box-shadow";
+@import "compass/css3/text-shadow";
+
+$site-width: 42em;
+$site-width-tab: 42em;
+$site-width-desk: 42em;
+
+@media all and (max-width: 320px) {
+
+}
+
+/* Normalizes @font-face for Firefox, Opera and IE */
+h1, h2, h3, h4 {
+	font-weight: normal;
+	font-style: normal;
+}
+
+a {
+  color: #fff;
+  text-decoration: none; 
+  &:hover { color: #d6d6d6; }
+  &:visited { color: #dadada; }
+}
+
+html {
+	font-family: 'open_sansregular', Arial, sans-serif;letter-spacing: 0;
+}
+
+body {
+    background: #104012;
+    margin-top: -7em;
+}
+
+h1, h2, h3 {
+	font-size: 1.5em;
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+.site-title {
+	color: #7e7e7e;
+	&:visited { color: #7e7e7e; }
+	@include text-shadow(none);
+}
+
+#angles {
+	width: $site-width-desk;
+	margin: 0px auto; 
+	border-right: 6em solid transparent;
+	border-left: 6em solid transparent;
+	border-top: 8em solid #fff; 
+	position: relative; 
+	bottom: -7em;
+	z-index: -1; 
+	/*@include box-shadow(black 2px 2px 10px);*/
+}
+
+#banner {
+	margin: 0px auto; 
+	padding: 1em; 
+	padding-left: 3em; 
+	margin-bottom: 1em; 
+	width: $site-width-desk; 
+}
+
+.main-navigation {
+	width: $site-width-desk;
+	margin: 1em auto;
+}
+
+#main {
+	text-align: center;
+}
+
+#square-back {
+	position: absolute;
+	top: 0;
+	width: 12.5em;
+	height: 12.5em;
+	z-index: -1; 
+}
+
+.blog-index {
+	display: inline-block;
+	max-width: $site-width-desk; 
+	overflow: auto;
+}
+
+article {
+	color: #fff;
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	margin: 1em;
+	/*border: 1em solid rgba(111, 111, 111, 0.9);*/
+}
+
+.lte-ie8 article {
+	/*border: 1em solid #828282;*/
+}
+
+.home {
+	float: left;
+	width: 12em;
+	height: 12em;
+	background: #108a12;
+	z-index: 0; 
+	@include box-shadow(black .1em .1em .5em);
+}
+
+.home a {
+  @include text-shadow(rgba(black, .5) 1px 1px 2px);
+}
+
+.hentry {
+	color: #000000;
+	margin: 0px auto; 
+	width: $site-width-desk;
+	background: #ffffff;
+}
+
+.entry-content {
+	margin: 1em;
+}
+
+.post a {
+	color: #000000;
+	&:visited { 
+		color: #3b3b3b;
+	}
+}
+
+.sidebar {
+	margin-top: 1em; 
+	background: #FFF; 
+	text-align: left;
+	padding: 1em; 
+}
+
+header {
+	z-index: 2; 
+	margin-left: 1em;
+	margin-top: .8em;  
+}
+
+.meta {
+	font-size: .5em;
+}
+
+#content {
+	margin: 0px auto; 
+	width: $site-width;
+}
+
+footer {
+	display: none;
+	margin: 0px auto;
+	text-align: center; 
+	background: #FFF; 
+	width: $site-width-desk; 
+	p {
+		font-size: .5em;
+	}
+}

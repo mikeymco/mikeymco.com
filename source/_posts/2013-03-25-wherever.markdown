@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Link"
+date: 2013-03-25 21:39
+comments: true
+categories: 
+
+link: http://twitter.com/fwoooshed
+thumbnail: /images/email.png
+
+thumbnailWidth: 100   # width in pixels
+thumbnailHeight: 50  # height in pixels
+---
