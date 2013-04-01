@@ -1,7 +1,5 @@
 mikeymco.com
-<<<<<<< HEAD
 
-Follinwg is copy of Octopress README.md...
 ===========
 
 ## What is Octopress?
@@ -42,6 +40,5 @@ THE SOFTWARE IS PROVIDED ‘AS IS’, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 #### If you want to be awesome.
 - Proudly display the 'Powered by Octopress' credit in the footer.
 - Add your site to the Wiki so we can watch the community grow.
+
 =======
-============
->>>>>>> refs/remotes/origin/master
