@@ -26,11 +26,11 @@
       {% if post.link %}
         <div class="postLink"></div>
       {% else %}
-        <div href="{{ root_url }}{{ post.url }}" class="postThumbnail"></div>
+        <div class="postThumbnail"></div>
       {% endif %}
     {% else %}
-  {{ content | excerpt }}</div>
-    {% endif %}
+  {{ content | excerpt }}
+    {% endif %}</div>
   {% capture excerpted %}{{ content | has_excerpt }}{% endcapture %}
   {% if excerpted == 'true' %}
     <footer>
