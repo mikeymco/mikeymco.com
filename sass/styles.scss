@@ -3,14 +3,6 @@
 @import "compass/css3/box-shadow";
 @import "compass/css3/text-shadow";
 
-$site-width: 42em;
-$site-width-tab: 42em;
-$site-width-desk: 42em;
-
-@media all and (max-width: 320px) {
-
-}
-
 /* Normalizes @font-face for Firefox, Opera and IE */
 h1, h2, h3, h4 {
 	font-weight: normal;
@@ -18,28 +10,60 @@ h1, h2, h3, h4 {
 }
 
 a {
-  color: #fff;
-  text-decoration: none; 
-  &:hover { color: #d6d6d6; }
-  &:visited { color: #dadada; }
+	color: #fff;
+	text-decoration: none; 
+	&:hover { color: #d6d6d6; }
+	&:visited { color: #dadada; }
 }
 
 html {
 	font-family: 'open_sansregular', Arial, sans-serif;letter-spacing: 0;
+	text-align: center;
 }
 
 body {
+	text-align: left;
+	width: 40em;
+	display: inline-block;
     background: #104012;
-    margin-top: -7em;
 }
 
-h1, h2, h3 {
-	font-size: 1.5em;
+@media all and (min-width: 320px) {
+  body {
+  	width: 20em;
+  }
+}
+
+@media all and (min-width: 480px) {
+  body {
+  	width: 30em;
+  }
+}
+
+@media all and (min-width: 640px) {
+  body {
+  	width: 40em;
+  }
+}
+
+h1{
+	font-size: 1.4em;
+	margin: 0;
+}
+
+h2, h3 {
+	font-size: 1em;
 	margin: 0;
 }
 
 ul {
 	list-style: none;
+}
+
+header {
+	padding-top: .3em; 
+	padding-left: .6em;
+	padding-right: .3em; 
 }
 
 .site-title {
@@ -49,46 +73,39 @@ ul {
 }
 
 #angles {
-	width: $site-width-desk;
-	margin: 0px auto; 
-	border-right: 6em solid transparent;
-	border-left: 6em solid transparent;
-	border-top: 8em solid #fff; 
-	position: relative; 
-	bottom: -7em;
+	margin: 0px auto;
+	/*border-right: 4em solid transparent;
+	border-left: 4em solid transparent;*/
+	border-right: .5em solid transparent;
+	border-left: .5em solid transparent;
+	border-top: 5em solid #fff; 
 	z-index: -1; 
 	/*@include box-shadow(black 2px 2px 10px);*/
 }
 
+#main {
+}
+
 #banner {
-	margin: 0px auto; 
-	padding: 1em; 
-	padding-left: 3em; 
-	margin-bottom: 1em; 
-	width: $site-width-desk; 
+	height: 4em;
+	margin-top: -5.5em;
+	/*padding-left: 4em;*/
+	padding-left: .5em;
+	padding-top: .7em;
 }
 
 .main-navigation {
-	width: $site-width-desk;
 	margin: 1em auto;
 }
 
-#main {
+#content {
+	margin: 0px auto;
 	text-align: center;
-}
-
-#square-back {
-	position: absolute;
-	top: 0;
-	width: 12.5em;
-	height: 12.5em;
-	z-index: -1; 
 }
 
 .blog-index {
 	display: inline-block;
-	max-width: $site-width-desk; 
-	overflow: auto;
+	overflow: hidden;
 }
 
 article {
@@ -96,7 +113,7 @@ article {
 	position: relative;
 	text-align: left;
 	overflow: hidden;
-	margin: 1em;
+	margin: .5em;
 	/*border: 1em solid rgba(111, 111, 111, 0.9);*/
 }
 
@@ -104,23 +121,49 @@ article {
 	/*border: 1em solid #828282;*/
 }
 
-.home {
+.article-home {
 	float: left;
-	width: 12em;
-	height: 12em;
+	width: 12.3333em;
+	height: 12.3333em;
 	background: #108a12;
 	z-index: 0; 
 	@include box-shadow(black .1em .1em .5em);
 }
 
-.home a {
+#square-back {
+	position: absolute;
+	top: 0;
+	width: 12.3333em;
+	height: 12.3333em;
+	z-index: -1; 
+}
+
+.article-home a {
   @include text-shadow(rgba(black, .5) 1px 1px 2px);
+}
+
+@media all and (max-width: 640px) {
+	article {
+		margin: .5em;
+	}
+	.article-home {
+		width: 9em;
+		height: 9em;
+	}
+ 	#square-back {
+		width: 9em;
+		height: 9em;
+  	}
+}
+
+.meta {
+	margin-top: .5em; 
+	font-size: .5em;
 }
 
 .hentry {
 	color: #000000;
-	margin: 0px auto; 
-	width: $site-width-desk;
+	margin: .5em; 
 	background: #ffffff;
 }
 
@@ -137,24 +180,9 @@ article {
 
 .sidebar {
 	margin-top: 1em; 
-	background: #FFF; 
+	background: #fff; 
 	text-align: left;
 	padding: 1em; 
-}
-
-header {
-	z-index: 2; 
-	margin-left: 1em;
-	margin-top: .8em;  
-}
-
-.meta {
-	font-size: .5em;
-}
-
-#content {
-	margin: 0px auto; 
-	width: $site-width;
 }
 
 footer {
@@ -162,7 +190,6 @@ footer {
 	margin: 0px auto;
 	text-align: center; 
 	background: #FFF; 
-	width: $site-width-desk; 
 	p {
 		font-size: .5em;
 	}
