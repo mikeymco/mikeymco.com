@@ -6,7 +6,6 @@
 
 html {
 	overflow: hidden;
-	position: relative;
 }
 
 html, body {
@@ -17,9 +16,8 @@ html, body {
 
 body {
     font-family: "weblysleek_uilight", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    position: absolute;
-    left: 50%;
     color: #fff;
+    margin: auto;
     background: url('/images/max.png');
     background-repeat: no-repeat;
     background-color: #fff;
@@ -38,7 +36,6 @@ body {
 nav {
 	position: absolute;
 	top: 24%;
-	margin-left: -50%;
 	h1 { 
 		margin: 0;
 		color: #374e1c; 
