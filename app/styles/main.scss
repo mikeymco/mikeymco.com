@@ -18,26 +18,29 @@ body {
     font-family: "weblysleek_uilight", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff;
     margin: auto;
-    background: url('/images/high-768.jpg');
+    background-image: url('/images/high-768.jpg');
     width: 100%;
     max-width: calc(2.18780251694095 * 100vh);
 }
 
-.transparent-onload {
-	opacity: 0;
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
 }
 
-@media all and (min-height: 768px) {
+@media all and (min-width: 1024px) and (max-width: 1920px) {
     body {
-    	background: url('/images/high-1080.png');
+    	background: url('/images/high-1080.jpg');
     }
 }
-@media all and (min-height: 1080px) {
+@media all and (min-width: 1920px) and (max-width: 2560px) {
     body {
-    	background: url('/images/high-1440.png');
+    	background: url('/images/high-1440.jpg');
     }
 }
-@media all and (min-height: 1440px) {
+@media all and (min-width: 2560px) {
     body {
     	background: url('/images/lossless-max.png');
     }
@@ -61,10 +64,11 @@ nav {
 		padding-left: 1.5vh;
 		padding-right: 1.5vh;
 		line-height: 9vh;
+		cursor: default;
 	}
 	ul {
 		list-style: none;
-		padding-left: 6vh;
+		padding-left: 5vh;
 		margin-top: 5vh;
 		margin-bottom: 5vh;
 	}
@@ -73,12 +77,63 @@ nav {
 		color: #fff;
 		text-decoration: none;
 		-webkit-font-smoothing: antialiased;
+		position: relative;
+		transition: background-color .25s ease;
+		-webkit-transition: background-color .25s ease;
+		padding: 0 1.5vh 0 1.5vh;
+		&:hover, &:focus {
+			outline: 0;
+			background-color: rgba(255, 255, 255, 0.1);
+		}
+		&:active {
+			transition: background-color .5s ease;
+			-webkit-transition: background-color .5s ease;
+			background-color: rgba(255, 255, 255, 0);	
+		}
+		// &:after {
+		// 	content: '';
+		// 	position: absolute;
+		// 	left: -4%;
+		// 	margin-top: 7%;
+		// 	height: 70%;
+		// 	transition: all .20s ease;
+  		// -webkit-transition: all .20s ease;
+		// 	border-left: 1vh solid transparent;
+		// }
+		// &:hover:after, &:focus:after {
+		// 	left: -8%;
+		// 	border-color: white;
+		// }
+		// &:active:after {
+		// 	transition: all .1s ease;
+  		// -webkit-transition: all .1s ease;
+		// 	border-color: transparent;
+		// }
 	}
 }
 
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+.fade {
+	/* CSS needed for animation
+	---------------------------------------------------- */
+	opacity:0;
+	-webkit-animation:fadeIn ease 1;
+	-moz-animation:fadeIn ease 1;
+	-o-animation:fadeIn ease 1;
+	animation:fadeIn ease 1;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	-o-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	-o-animation-duration:1s;
+	animation-duration:1s;
+
 }
+
+/* Key Frames
+---------------------------------------------------- */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-o-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
