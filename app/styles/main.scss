@@ -18,19 +18,36 @@ body {
     font-family: "weblysleek_uilight", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff;
     margin: auto;
-    background: url('/images/max.png');
-    background-repeat: no-repeat;
-    background-color: #fff;
-    background-size: auto 100%;
-    background-position: center;
+    background: url('/images/high-768.jpg');
     width: 100%;
     max-width: calc(2.18780251694095 * 100vh);
 }
 
-@media 
-(-webkit-min-device-pixel-ratio: 2), 
-(min-resolution: 192dpi) { 
-    /* Retina-specific stuff here */
+.transparent-onload {
+	opacity: 0;
+}
+
+@media all and (min-height: 768px) {
+    body {
+    	background: url('/images/high-1080.png');
+    }
+}
+@media all and (min-height: 1080px) {
+    body {
+    	background: url('/images/high-1440.png');
+    }
+}
+@media all and (min-height: 1440px) {
+    body {
+    	background: url('/images/lossless-max.png');
+    }
+}
+
+body {
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: auto 100%;
+    background-position: center;
 }
 
 nav {
