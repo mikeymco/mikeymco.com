@@ -59,13 +59,19 @@ nav {
 	max-width: 50%;
 	h1 { 
 		margin: 0;
-		color: #374e1c; 
-		background-color: #fff;
 		font-size: 6vh;
-		padding-left: 1.5vh;
-		padding-right: 1.5vh;
 		line-height: 9vh;
 		cursor: default;
+		span {
+			display: inline-block;
+			background-color: #fff;
+			color: #374e1c;
+			padding-left: 1.5vh;
+			padding-right: 1.5vh;
+			&:first-child {
+				margin-right: -3.2vh;
+			}
+		}
 	}
 	ul {
 		list-style: none;
