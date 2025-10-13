@@ -159,6 +159,15 @@
     small {
       font-weight: normal;
     }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+    }
+    .grid > * {
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+    }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -210,5 +219,15 @@ to stay. I run out of money in ~4 days.</p>
 <p>If you’d like to help: <a href="https://ko-fi.com/shiftrequest">ko-fi</a>,
 PayPal. If you’d like to hate or manipulate,
 <a href="https://shiftrequest.art/msg/main/">good luck</a>.✌️💋</p>
+<div class="grid">
+<img src="./pic1.jpg" alt="Mikey">
+<img src="./pic2.jpg" alt="Mikey - Sadder">
+<img src="./pic5.jpg">
+<img src="./pic7.jpg">
+<img src="./pic6.jpg">
+<img src="./pic4.jpg">
+<img src="./pic3.jpg">
+<img src="./pic8.jpg">
+</div>
 </body>
 </html>
