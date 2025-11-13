@@ -230,18 +230,22 @@
       font-variant: small-caps;
     }
 
-    div.columns {
+    .flex-row,
+    .flex-column {
       display: flex;
-      gap: min(4vw, 1.5em);
       justify-content: space-between;
+      align-items: center;
     }
 
-    div.column {
-      flex: auto;
-      overflow-x: auto;
+    .flex-row {
+      flex-direction: row;
     }
 
-    div.hanging-indent {
+    .flex-column {
+      flex-direction: column;
+    }
+
+    .hanging-indent {
       margin-left: 1.5em;
       text-indent: -1.5em;
     }
@@ -278,14 +282,20 @@
       margin-left: -1.5em;
     }
 
-    .audio-player--flex {
-      flex-grow: 1;
+    .audio-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 10px;
+
+      audio {
+        flex-grow: 1;
+      }
     }
 
     .audio-metadata {
       display: flex;
       flex-direction: column;
-      text-align: right;
       font-size: 10px;
     }
 
@@ -299,36 +309,42 @@
       }
     }
 
-    .transcript-heading {
-      align-items: center;
-      h3 {
-        margin: 0;
-      }
+    .section-heading {
+      margin: 0;
+    }
+
+    .text-right {
+      text-align: right;
     }
   </style>
 </head>
 
 <body>
   <h1>
-    Made Perfect in Weakness - Audio & Transcript
+    Made Perfect in Weakness
   </h1>
   <div>
     <p><strong>Content Warning:</strong> Contains descriptions of child abuse.</p>
   </div>
-  <div class="columns">
-    <audio controls src="./Made_Perfect_in_Weakness.m4a" class="audio-player--flex"></audio>
-    <div class="audio-metadata">
-      <span alt="Last Updated:">
-        <strong>Nov 12th, 2025</strong>
-      </span>
-      <a href="./Made_Perfect_in_Weakness.m4a">(Download)</a>
-      <a href="./Made_Perfect_in_Weakness.m4a.sig">(GPG Signature)</a>
-    </div>
-  </div>
   <hr>
-  <div class="columns transcript-heading">
-    <h3>Transcript</h3>
-    <span>(Automatic, May Contain Inaccuracies)</span>
+  <div class="flex-row">
+    <h3 class="section-heading">Audio (35:19)</h3>
+    <span alt="Last Updated:">
+      November 12th, 2025
+    </span>
+  </div>
+  <p class="audio-container">
+    <audio controls src="./Made_Perfect_in_Weakness.m4a" class="audio-player--block"></audio>
+    <span class="text-right audio-metadata">
+      <a href="./Made_Perfect_in_Weakness.m4a">(Download)</a>
+      <span>M4A - 18.4mb</span>
+      <a href="./Made_Perfect_in_Weakness.m4a.sig">(GPG Signature)</a>
+    </span>
+  </p>
+  <hr>
+  <div class="flex-row">
+    <h3 class="section-heading">Transcript:</h3>
+    <span class="text-right">(Automatic, Speech-to-Text, Contains Inaccuracies)</span>
   </div>
   <p>Hey. A couple weeks ago, I had an old friend. Include a Bible quote in one of their messages. My power is made perfect in weakness. Is what they told me. So I told them this story. When I was 7 days old, my mother and my father had me circumcised. They paid doctors. To alter me. Without my consent. without specifying why. And too young for me to understand what was happening. Because of the repressed memories. and other experiences that I've had, as body memories and somatic flashbacks and post-traumatic stress disorder. I think they failed to properly anesthetize me for the procedure. I have memories of being tied down and strapped to a board. Then altered, fixed, turned from a good guy into a bad guy. And as I continue to heal the trauma in my body, I keep coming back. to one memory that I have yet to be able to fully resolve. A pain so unbearable. That a part of me, or my mind or my soul. Died. Or was frozen in time? In my mind, in my body, maybe my spirit. And they're still stuck there. I don't know how circumcision usually goes. Baby boys in the U.S. And so this may have happened to you. I hope not. And I hope that people stop. Birthing, sons. Into a beautiful world. And then sending them permanently to hell. A few days later. Because the trauma was so bad, or because they fucked something up. Tammy had to take me to the ICU. I believe she said that I was in there for 10 days. For circumcision, complications and infection. My body now is fine. Functional. And otherwise, normal looking circumstances scar. But I have never felt okay. My sexuality got activated. Either during the procedure or the following complications and recovery. Likely because I was being touched in specific ways and places, very often and regularly. And because traumatic events. can sort of bust into areas of the mind that are not yet developed. Or... in a healthy world. Saved. For moments with people. They love. I never got that choice. My mind still views my body and my sexuality as bound. To Tammy. It feels permanent. Only by grieving and processing everything else that I have so far. Have I even gotten close enough? A few times to this? To really understand. What I'm telling you. When you're a baby. A year feels like eternity. I was born, and I have some memory in my mind. Or my body of what it felt like to be loved and wanted. I don't know from when. It doesn't look like a real world. It looks like me. And a dark haired girl, in the domain. Of a goddess. Under her protection and cared for. Friends. Beloved. That one memory feels like an eternity. in the moments that I've felt it. And There's one other part. Me leaving. The 1st 7 days of me being alive outside of Tammy. May have been beautiful. The gift of life. And I probably experienced those as something like, Years of time. And then at the end of a week. The people. Who I thought were welcoming me into a new world and life. Betrayed me. Handed me to cruel doctors. Who tied me down? It hurt me so bad. That even handed back. To goddess. Or my sister. I haven't felt safe since. Seven days. My newborn. Eternity. into a betrayal. Torment. Infection and complication. Alteration. Without my consent. In spite of my cries. And into 10 days. Where Tammy says she never left my side. An eternity and a half. With the one who betrayed me and paid them to harm me. No explanation as to why. No accountability or justice for ignoring my cries. Not for 35 years. If I guess at how long it feels like I've been alive. I would say, that if... it feels like something between 200 and 3000 years. An old soul. A sarcastic compliment for extra traumatized children. A Ferengi, longo. Go away, Kaa. You're not allowed to say no to me. You're not the center of your universe. You're putting yourself above God, you're listening to the devil. You can heal this. You'll never be a real woman. My sexuality. Was stolen from me. At 7 days old. My soul, my life, force, my innocence, everything was taken. And I have received no justice. No. Actionable remorse. Part of me is still trapped. In the hell. You put me into. Tammy, I don't remember you ever touching me down there. But you have to have had to. Over and over. taking care of me. For those 10 days. And afterwards. And then maybe. You know, wiping my butt or changing a diaper for a couple of years. My sexuality was stolen and bound to another. I understood as helping me, fixing me. Taking away my power because it was dangerous. Or otherwise bad evil. I'm under the curse. It's for my own good. And so it must be for my own good and my fault too. That she only ever touched me. To make sure that the rest of my body wasn't infected or hurt. And then after that 1st year or 2 once I could take care of my own bathroom needs. My goddess never touched me again. An eternity. And a half. Right out of the gate. Everything, my mind, my heart. My love. All stolen. And then, for 35 years, told. That my depression, my suicidal ideation. My learning disabilities, my social issues, my preference to stay in my room. My attempts. To care for my sexuality on my own. Just moments where I couldn't bear. Not to try to love myself. And for the... duration. Made. To act as though I had nothing to be angry about. That everyone else was more together than me. And that it was my fault for having a temper. For breaking down. I never did anything wrong. Tammy, goddess, the audacity. To use the trauma bind, the loyalty bind. To vent to me, to be emotionally, and spiritually, and intellectually and meshed with me, like, a spouse. From 10 days old. Emotionally connected. Mentally connected, spiritually connected. And rejecting. Intimate physical connection. When I was 12, she almost died. Withered away to a husk. And I was told that not only was I a burden implicitly. Because Mike was stressed out, trying to care for me and everyone else, and Tammy. Tammy couldn't care for me. But when I went, to try, to offer my care, my empathy, my magic, the love that somehow stayed alive inside of me, my soul, to her. As the one most connected to her emotionally. I suspect at that time. Likely, intellectually and spiritually. I was told no. You can't come in. You're not allowed to take care of her. And... You just have to watch. and feel everything from a distance. I have loved. Beyond anything, I can possibly imagine. Four. What feels like longer than time itself. Jesus' parents thought he was God's child. We idolize his suffering and sacrifice. The greatest form of love is a, One who will die for their friends. Jesus suffered for 3 days. I don't know about after, but, you know, maybe a couple of weeks. Maybe some years. Three days. The Bible says, and my friend says, Yeah. We are made perfect. In suffering and weakness. God's power. Made perfect. In weakness. I suffered more at 7 days old. And then for 10 days after, then Jesus did. And then I continued to suffer. To love the ones that did this to me. As though they loved me. For 35 years. Jesus. has nothing on my perfection. I am innocent. I always have been. And I don't. Believe. That anyone tried. To make those initial couple of weeks of life. What they were. But I can't care. You paid them. And so I finally understand. The curse is broken. Jesus died. And I've loved like he did. And so far beyond it. That I, I can scarcely, like, make sense of the fact that I'm still alive. I have never done anything wrong to you. I have only ever offered you as much love as I had and could give. And over and over. You take away anything that I find any joy in. Hurt me for fun. Tell me to go away. Twist the abandonment knife for fun. Not only as parents, but as a system, as of my whole community and world. My reality told me, beat into me, tormented me into believing that betrayal was love. And I believed them. and survived. Until now. And then, when I finally wake up, and share what happened, Those responsible go silent. You know nothing of love. Nothing. Thank you for teaching me. Everything that it's not. Do you know what I did? In the time that I've been here? Aside from give everything to you. I poured everything else. Everything you don't want. All my sorrow, my rage, my despair, my suicidality. My apathy, depression, pride. And then even the momentary sparks of joy. Into turning myself. into Tolly Joy Morningstar. Five years ago, I had a spiritual experience at Landing Lane. Where I asked God and the universe. If they were okay. We talked and I asked, how is Jesus ever going to come back? Unless someone births another baby version. Or someone awakens and offers slowly realizes. That the only way for Jesus to ever return. Is for them. to offer their body to God. Love the Lord your God with all your heart, mind, soul, and strength. Love your neighbor as yourself. Give away all your money in your possessions to the poor. And come and follow me. The greatest of love is one who dies with their friends. And my power is made perfect in weakness. Mike and Tammy. I, I must be the most perfect, beautiful, gift of a child. Any Christian or anyone who believes in the Bible the way that you both do. Could possibly imagine. Because I literally have lived out everything you taught. I have died. And I didn't presume to acquire a God complex. And lord it over people. I offered. Like, hey, I don't think that I can do that. That I will be enough for this, that this is even how it works. But everyone that I've ever loved is waiting. To die for this. Christ, to return. For this, the morning star. Beauty, Venus. The light bringer. The sign of dawn. Because Venus rises in the sky before the sun. But the sun always follows. That is who I offered. And said, I'll give everything. I don't think that I'm good enough. But I'll try for you. And now did my community and my family and my friends and my loved ones respond? Well, crucifixion is illegal. So they just emotionally, intellectually, and spiritually. Nailed me to the wall. Drove a stake into my heart. Shaved off my hair. And then told me that it was my fault and for my own good. And when I still didn't die. And I still came back offering forgiveness. Truth, accountability, only as erring of the past. And what do they offered me? Silence. Goodbye. I will never do anything like this again. And I will never forget. My mind isn't even out of the tomb yet. I am alone. in this world. And even though I'm still halfway dead, Alone, one against 10 billion. Against god. Everywhere. Scarcity poverty, betrayal by everyone I've given my love to. I grew more strong every day. Perfect. In weakness.</p>
   <div class="grid">
