@@ -285,16 +285,22 @@
     .audio-metadata {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
-      align-items: end;
+      text-align: right;
+      font-size: 10px;
     }
 
-    .audio-download-link {
-      text-align: right;
+    @media (min-width: 466px) {
+      .audio-metadata {
+        font-size: 15px;
+
+        a {
+          font-size: 14px;
+        }
+      }
     }
 
     .transcript-heading {
-      align-items: center;;
+      align-items: center;
       h3 {
         margin: 0;
       }
@@ -312,10 +318,11 @@
   <div class="columns">
     <audio controls src="./Made_Perfect_in_Weakness.m4a" class="audio-player--flex"></audio>
     <div class="audio-metadata">
-      <div alt="Last Updated:">
-        <strong>November 12th, 2025</strong>
-      </div>
-      <a href="./Made_Perfect_in_Weakness.m4a" class="audio-download-link">Download Audio</a>
+      <span alt="Last Updated:">
+        <strong>Nov 12th, 2025</strong>
+      </span>
+      <a href="./Made_Perfect_in_Weakness.m4a">(Download)</a>
+      <a href="./Made_Perfect_in_Weakness.m4a.sig">(GPG Signature)</a>
     </div>
   </div>
   <hr>
