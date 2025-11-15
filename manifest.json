@@ -1,7 +1,7 @@
 {
   "name": "mikeymco.com",
   "short_name": "mikeymco",
-  "description": "mikeymco.com",
+  "description": "Personal Site & Links",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#3a6087",
