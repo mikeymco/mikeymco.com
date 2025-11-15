@@ -1,8 +1,22 @@
 # mikeymco.github.io
-A simple personal site.
+A Jekyll based personal website.
 
+## Development
+
+To run locally for development:
+
+```bash
+# Install dependencies
+bundle install
+
+# Serve the site locally
+bundle exec jekyll serve --livereload
 ```
-gem install bundler jekyll
-bundle exec jekyll serve
-# => Now browse to http://localhost:4000
+
+The site will be available at `http://localhost:4000/`
+
+For local network access to server, use:
+
+```bash
+bundle exec jekyll serve --livereload --host=0.0.0.0 --port=4000
 ```
