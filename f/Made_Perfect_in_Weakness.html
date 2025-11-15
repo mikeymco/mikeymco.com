@@ -98,6 +98,11 @@
       color: #991acc;
     }
 
+    .disabled {
+      color: gray;
+      cursor: not-allowed;
+    }
+
     img {
       max-width: 100%;
     }
@@ -226,10 +231,6 @@
       white-space: pre-wrap;
     }
 
-    span.smallcaps {
-      font-variant: small-caps;
-    }
-
     .flex-row,
     .flex-column {
       display: flex;
@@ -245,44 +246,12 @@
       flex-direction: column;
     }
 
-    .hanging-indent {
-      margin-left: 1.5em;
-      text-indent: -1.5em;
-    }
-
-    /* The extra [class] is a hack that increases specificity enough to
-       override a similar rule in reveal.js */
-    ul.task-list[class] {
-      list-style: none;
-    }
-
-    ul.task-list li input[type="checkbox"] {
-      font-size: inherit;
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
-
-    .display.math {
-      display: block;
-      text-align: center;
-      margin: 0.5rem auto;
-    }
-
-    .no-wrap {
-      white-space: nowrap;
-    }
-
-    .red {
-      color: red;
-    }
-
     ul p {
       margin-bottom: 0;
       margin-left: -1.5em;
     }
 
-    .audio-container {
+    .media-container {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -293,19 +262,20 @@
       }
     }
 
-    .audio-metadata {
+    .video-link {
+      display: block;
+      font-size: 21px;
+    }
+
+    .media-metadata {
       display: flex;
       flex-direction: column;
       font-size: 10px;
     }
 
     @media (min-width: 466px) {
-      .audio-metadata {
-        font-size: 15px;
-
-        a {
-          font-size: 14px;
-        }
+      .media-metadata {
+        font-size: 14px;
       }
     }
 
@@ -316,6 +286,10 @@
     .text-right {
       text-align: right;
     }
+
+    .normal-weight {
+      font-weight: normal;
+    }
   </style>
 </head>
 
@@ -323,25 +297,26 @@
   <h1>
     Made Perfect in Weakness: My Survivorship Story
   </h1>
-  <div>
-    <p><strong>Content Warning:</strong> Descriptions of extreme neglect, torture, & child abuse.</p>
-  </div>
-  <hr>
+  <p><strong>Content Warning:</strong> Descriptions of extreme neglect, torture, & child abuse.</p>
+  <hr />
   <div class="flex-row">
     <h3 class="section-heading">Audio</h3>
     <span alt="Last Updated:">
       November 12th, 2025
     </span>
   </div>
-  <p class="audio-container">
-    <audio controls src="./Made_Perfect_in_Weakness.m4a" class="audio-player--block"></audio>
-    <span class="text-right audio-metadata">
-      <span>35:19 - <a href="./Made_Perfect_in_Weakness.m4a">Download</a></span>
+  <p class="media-container">
+    <audio controls src="./Made_Perfect_in_Weakness.m4a" class="media-player--block"></audio>
+    <span class="text-right media-metadata">
+      <span>
+        <span>35:19 -</span>
+        <a href="./Made_Perfect_in_Weakness.m4a">Download</a>
+      </span>
       <span>M4A - 18.4mb</span>
       <a href="./Made_Perfect_in_Weakness.m4a.sig">(GPG Signature)</a>
     </span>
   </p>
-  <hr>
+  <hr />
   <div class="flex-row">
     <h3 class="section-heading">Transcript</h3>
     <span class="text-right">(Automatic, Speech-to-Text, Contains Inaccuracies)</span>
