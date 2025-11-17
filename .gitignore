@@ -12,3 +12,6 @@ Thumbs.db
 
 # Development files
 .well-known/
+
+# Media files (keep out of repo)
+_msg/
