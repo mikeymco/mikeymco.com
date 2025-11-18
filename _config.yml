@@ -1,7 +1,7 @@
 # Site settings
 title: Mikey McOrmond
 description: "Personal Site & Links"
-url: "https://mikeymco.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: mikeymco.com" # the base hostname & protocol for your site, e.g. example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 
 # Include .well-known directory for Chrome DevTools
