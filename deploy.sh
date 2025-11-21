@@ -11,4 +11,4 @@ INVALIDATION_ID=$(aws cloudfront create-invalidation --distribution-id E17VKRWLX
 
 echo "Created invalidation: $INVALIDATION_ID"
 
-echo "Deployment complete! mikeymco.com is live & @ latest"
+echo "Deployment complete! mikeymco.com"
